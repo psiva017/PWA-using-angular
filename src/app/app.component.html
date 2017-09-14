@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+    <h2>My Repositories</h2>
+</md-toolbar>
+
+
+
+<md-progress-bar mode="indeterminate" *shellRender></md-progress-bar>
+<div *shellNoRender>
+    <app-git-repo-list>
+    </app-git-repo-list>
+</div>

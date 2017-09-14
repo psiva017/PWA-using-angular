@@ -1,0 +1,8 @@
+<md-list>
+    <md-list-item *ngFor="let repo of repos">
+        <img md-list-avatar [src]="repo.owner.avatar_url" alt="">
+        <h3 md-line>
+            {{repo.name}} - <a [href]="repo.url">{{repo.url}}</a>
+        </h3>
+    </md-list-item>
+</md-list>
